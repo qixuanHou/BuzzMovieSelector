@@ -1,0 +1,1 @@
+"ownerId(STRING)","objectId(STRING_ID)","updated(DATETIME)","created(DATETIME)","customer__Users__bcklsFK__ONE_TO_ONE"

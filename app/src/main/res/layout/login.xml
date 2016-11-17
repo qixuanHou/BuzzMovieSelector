@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f4cc2d">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Buzz Movie Selector"
+        android:id="@+id/textView6"
+        android:textStyle="bold"
+        android:textSize="35dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:typeface="normal"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ef000000" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/usernameTxt"
+        android:hint="Username"
+        android:editable="false"
+        android:clickable="false"
+        android:drawableTint="#000000" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/passwordTxt"
+        android:hint="Password" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/LoginB"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onBLoginClick"
+        android:background="#c1000000"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:id="@+id/CancelB"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onBCancelClick"
+        android:background="#d6000000"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="7dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do Not Have An Account?! Register Now"
+        android:id="@+id/registerNow"
+        android:textColor="@android:color/background_dark"
+        android:paddingTop="20dp"
+        android:paddingBottom="8dp"
+        android:textSize="@dimen/abc_text_size_subtitle_material_toolbar"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onRegisterNew" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"
+            android:layout_weight="0.45" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="OR"
+            android:layout_weight="0.1"
+            android:gravity="center_horizontal"
+            android:textStyle="italic" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"
+            android:layout_weight="0.45" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN WITH FACEBOOK"
+        android:id="@+id/loginFacebookButton"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="0dp"
+        android:ems="12"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onLoginFacebookButtonClick"
+        android:background="#3550b5"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN WITH TWITTER"
+        android:id="@+id/loginTwitterButton"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:ems="12"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onLoginWithTwitterClick"
+        android:background="#69b8fd"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Forgot Your Password! Click Here!"
+        android:id="@+id/recoveryPassword"
+        android:onClick="onBforgotPassword"
+        android:background="#f4cc2d"
+        android:layout_below="@+id/loginTwitterButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp" />
+
+</LinearLayout>

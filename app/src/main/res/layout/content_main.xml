@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="edu.gatech.bms.MainActivity"
+    android:background="#f4cc2d"
+    tools:showIn="@layout/activity_main">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BuzZ"
+        android:id="@+id/textView2"
+        android:textSize="100dp"
+        android:textIsSelectable="false"
+        android:typeface="sans"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#3a3535"
+        android:layout_marginTop="0dp" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/loginButton"
+        android:onClick="onButtonLoginClick"
+        android:textStyle="bold"
+        android:background="#3b3737"
+        android:typeface="normal"
+        android:textSize="32dp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="43dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:text="Register"
+        android:id="@+id/registerButton"
+        android:nestedScrollingEnabled="false"
+        android:onClick="onButtonRegisterClick"
+        android:textStyle="bold"
+        android:background="#1a1a1a"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/loginButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:textSize="17dp"
+        android:typeface="monospace" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Movie Selector"
+        android:id="@+id/textView3"
+        android:textStyle="bold|italic"
+        android:textSize="35dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:typeface="sans"
+        android:layout_marginTop="0dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="all of life&apos;s riddles are answered in the movies"
+        android:id="@+id/textView_quote1"
+        android:textStyle="bold|italic"
+        android:typeface="sans"
+        android:textSize="15dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="- Steve Martin"
+        android:id="@+id/textView"
+        android:textStyle="italic"
+        android:typeface="monospace"
+        android:textColor="#000000"
+        android:layout_below="@+id/textView_quote1"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginTop="10dp" />
+</RelativeLayout>

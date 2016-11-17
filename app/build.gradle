@@ -1,0 +1,70 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "edu.gatech.bms"
+        minSdkVersion 18
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/LGPL2.1'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/notice.txt'
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.0.1'
+
+
+    //*******Added these entries below to support Android testing
+    androidTestCompile 'junit:junit:4.12'
+    androidTestCompile ('com.android.support.test.espresso:espresso-core:2.2.1') {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    }
+    androidTestCompile ('com.android.support.test:runner:0.4.1') {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    }
+    androidTestCompile 'com.android.support.test:rules:0.4.1'
+    androidTestCompile 'com.android.support.test.uiautomator:uiautomator-v18:2.1.1'
+
+    /*********Added this entry to support Mock testing ******************
+     *
+     */
+    testCompile 'org.mockito:mockito-core:1.+'
+
+
+    compile 'com.android.support:design:23.0.1'
+    compile project(path: ':backend', configuration: 'android-endpoints')
+    compile files('../libs/backendless.jar')
+    compile files('../libs/httpclient-4.5.1.jar')
+    compile files('../libs/httpcore-4.4.3.jar')
+    compile 'com.google.android.gms:play-services-appindexing:8.4.0'
+}
+
+configurations.all {
+    resolutionStrategy.force 'com.google.code.findbugs:jsr305:3.0.1'
+}

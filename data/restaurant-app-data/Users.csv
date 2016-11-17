@@ -1,0 +1,3 @@
+"password(STRING)","updated(DATETIME)","objectId(STRING_ID)","created(DATETIME)","phone(STRING)","age(INT)","email(STRING)","name(STRING)","ownerId(STRING)","bckls__userTypeId(INT)","bckls__socialId(STRING)","bckls__displayName(STRING)"
+"d8578edf8458ce06fbc5bb76a58c5ca4","02/19/2015 00:00:00 GMT+0000","1796D982-6474-3326-FF24-4199B93E3D00","02/19/2015 00:00:00 GMT+0000",null,null,"btail@mistercat.com.ua","Blacktail the Cat",null,1,null,null
+"d8578edf8458ce06fbc5bb76a58c5ca4",null,"57E039EF-D1BB-76B7-FF6E-9E52676EED00","02/19/2015 00:00:00 GMT+0000",null,null,"aleksei.fursov@evrasia.in.ua","Aleksei Fursov",null,1,null,null
